@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Special+Elite&display=swap" rel="stylesheet">
+  </head>
+<body>
+  <h1 id="title">Survey Form</h1>
+  <p id="description">Please take a few minutes to complete this survey, Your feedback is important to us!</p>
+<div id="container">
+  <form action="" method="post" id="survey-form">
+    <fieldset>
+      <label for="name" id="name-label"><p class="distinct">Name</p> <input type="text" id="name" placeholder="Zacc Anyona" class="resize" required></label>
+      <label for="email" id="email-label"><p class="distinct">Email</p> <input type="email" id="email" placeholder="you@nothing.com" class="resize" required></label>
+      <label for="gender" ><p class="distinct">Gender</p>
+        <select name="gender" id="gender" class="resize" required>
+          <option value="">--Please Select--</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="nonbinary">Non-binary</option>
+          <option value="prefernottoanswer">Prefer not to answer</option>
+        </select>
+      </label>
+      <label for="number" id="number-label"><p class="distinct">Age</p> <input id="number" type="number" name="age" placeholder="18 and above" min="18" max="65" class="resize" required></label>
+      <label for="location"><p class="distinct">Location</p>
+        <input type="text" name="location" id="location" placeholder="RUIRU KENYA" class="resize" required>
+      </label>
+      <label for="income"><p class="distinct">Annual Income</p>
+        <select name="income" id="dropdown" id="income" class="resize" required>
+          <option value="">--Please select--</option>
+          <option value="1">Below $250,000</option>
+          <option value="2">$250,000-$600,000</option>
+          <option value="3">Above $600,000</option>
+        </select>
+      </label>
+    </fieldset>
+    <fieldset>
+      <label><p class="distinct">Would you recommend BimmaFlipz to a friend?</p> </label>
+      <label for="definately"><input type="radio" name="recommend" id="definately" class="reset" value="Definately!" reuired> Definately!</label>
+      <label for="maybe"><input type="radio" name="recommend" id="maybe" class="reset" value="Maybe" required> Maybe</label>
+      <label for="never"><input type="radio" name="recommend" id="never" class="reset" value="Never" required> Never</label>
+      
+    </fieldset>
+    <fieldset>
+      <label><p class="distinct">Car buying habits</p>
+        <label for="new"><input type="radio" id="new" name="habit" class="reset" value="I typically buy new cars" required> I typically buy new cars. </label>
+        <label for="used"><input type="radio" id="used" name="habit" class="reset" value="I typically buy used cars" required> I typically buy used cars. </label>
+        <label for="new-and-used"><input type="radio" id="new-and-used" name="habit" class="reset" value="I typically buy new and used cars" required> I typically buy new and used cars. </label>
+      </label>
+    </fieldset>
+    <fieldset>
+      <label><p class="distinct">BMW car ownership</p>
+        <label for="own bmw"><input type="radio" name="own" id="own-bmw" class="reset" value="Yes I currently own a BMW" required> Yes I currently own a BMW.</label>
+        <label for="no-bmw"><input type="radio" name="own" id="no-bmw" class="reset" value="No I do not own a BMW" required> No I do not own a BMW.</label> 
+        <label for="model">If YES, which is your preferred BMW model <input type="text" id="model" placeholder="E30 3 SERIES" class="resize" required></label>
+      </label>
+    </fieldset>
+    <fieldset>
+      <label><p class="distinct">Preferred BMW modification</p>
+        <label><input type="checkbox" class="reset" value="engine"> Engine Modifications.</label>
+        <label><input type="checkbox" class="reset" value="wheel"> Wheel Spacers.</label>
+        <label><input type="checkbox" class="reset" value="racing"> Racing Stud Kits.</label>
+        <label><input type="checkbox" class="reset" value="brakes"> Brake Components.</label>
+        <label><input type="checkbox" class="reset" value="suspension"> Suspension Bushings.</label>
+      </label> 
+    </fieldset>
+    <fieldset>
+      <label><p class="distinct">Preferred BMW Colors</p>
+        <label><input type="checkbox" class="reset" value="imola"> BMW Individual Imola Red II Non-Metallic</label>
+        <label><input type="checkbox" class="reset" value="estoril"> BMW Estoril Blue Metallc</label>
+        <label><input type="checkbox" class="reset" value="silver"> BMW Individual Silver Grey metallic</label>
+        <label><input type="checkbox" class="reset" value="carbon"> BMW Carbon Black Metallic</label>
+        <label><input type="checkbox" class="reset" value="sonoma"> BMW Individual Sonoma Green metallic</label>
+        <label><input type="checkbox" class="reset" value="british"> BMW Individual British Racing Green non-metallic.</label>
+      </label>
+    </fieldset>
+    <fieldset id="text">
+      <label><p class="distinct">You have something on your mind?...Talk to us...</p> <textarea id="talk" name="talk" rows="3" cols="30" placeholder="I have a query on..." class="resize"></textarea></label>
+    </fieldset>
+    <fieldset>
+      <input type="submit" value="Submit" id="submit">
+      <label for="terms"><input type="checkbox" class="reset" value="accepted" id="terms"> I accept the <a href="#">terms and conditions</a>
+      </fieldset>
+  </form>
+  </div>
+</body>
+</html>
